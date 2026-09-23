@@ -30,28 +30,89 @@ document.addEventListener('DOMContentLoaded', () => {
 
   window.addEventListener('scroll', updateProgressBar, { passive: true });
 
-  // --- 3. Ambient Spotlight Cursor (Silky Smooth 60fps) ---
+  // --- 3. Ambient Spotlight & Interactive Hover Arrow Follower ---
   const glow = document.getElementById('ambient-glow');
+  const follower = document.getElementById('cursor-follower');
+  const followerLabel = document.getElementById('follower-label');
+
   let mouseX = window.innerWidth / 2;
   let mouseY = window.innerHeight / 2;
   let currentX = mouseX;
   let currentY = mouseY;
+  let followerX = mouseX;
+  let followerY = mouseY;
+  let isMouseInWindow = false;
 
-  if (glow) {
-    window.addEventListener('mousemove', (e) => {
-      mouseX = e.clientX;
-      mouseY = e.clientY;
-    });
+  window.addEventListener('mousemove', (e) => {
+    mouseX = e.clientX;
+    mouseY = e.clientY;
 
-    const updateGlow = () => {
+    if (!isMouseInWindow && follower) {
+      isMouseInWindow = true;
+      follower.classList.add('is-active');
+    }
+  });
+
+  window.addEventListener('mouseout', (e) => {
+    if (!e.relatedTarget && !e.toElement && follower) {
+      isMouseInWindow = false;
+      follower.classList.remove('is-active');
+    }
+  });
+
+  // Silky Smooth 60fps Lerp Loop
+  const updateCursorPhysics = () => {
+    // 1. Ambient Spotlight
+    if (glow) {
       currentX += (mouseX - currentX) * 0.12;
       currentY += (mouseY - currentY) * 0.12;
       glow.style.left = `${currentX}px`;
       glow.style.top = `${currentY}px`;
-      requestAnimationFrame(updateGlow);
-    };
-    requestAnimationFrame(updateGlow);
-  }
+    }
+
+    // 2. Interactive Hover Arrow Follower
+    if (follower && isMouseInWindow) {
+      followerX += (mouseX - followerX) * 0.22;
+      followerY += (mouseY - followerY) * 0.22;
+      follower.style.transform = `translate3d(${followerX}px, ${followerY}px, 0)`;
+    }
+
+    requestAnimationFrame(updateCursorPhysics);
+  };
+  requestAnimationFrame(updateCursorPhysics);
+
+  // Dynamic Context-Aware Hover Triggers
+  document.addEventListener('mouseover', (e) => {
+    if (!follower || !followerLabel) return;
+
+    const target = e.target;
+    const isCanvas = target.closest('#hero-canvas-box');
+    const isStatus = target.closest('#hiring-status-pill');
+    const isBtn = target.closest('.btn-primary, .btn-secondary, .nav-cta-btn, .btn-cta-emerald, .btn-cta-copy, .social-pill');
+    const isCard = target.closest('.project-card, .sidequest-card, .award-showcase-box, .marquee-item');
+    const isHero = target.closest('.hero-section');
+
+    // Reset modifier classes
+    follower.classList.remove('is-hovering-btn', 'is-hovering-canvas', 'is-hovering-status');
+
+    if (isCanvas) {
+      follower.classList.add('is-hovering-canvas');
+      followerLabel.textContent = 'INTERACT';
+    } else if (isStatus) {
+      follower.classList.add('is-hovering-status');
+      followerLabel.textContent = 'OPEN TO HIRE 🟢';
+    } else if (isBtn) {
+      follower.classList.add('is-hovering-btn');
+      followerLabel.textContent = 'CLICK ↗';
+    } else if (isCard) {
+      follower.classList.add('is-hovering-btn');
+      followerLabel.textContent = 'EXPLORE ↗';
+    } else if (isHero) {
+      followerLabel.textContent = 'EXPLORE';
+    } else {
+      followerLabel.textContent = 'DHANUSH.AI';
+    }
+  });
 
   // --- 4. Scroll-Driven Section Reveal (Intersection Observer) ---
   const revealElements = document.querySelectorAll('.reveal');
@@ -216,14 +277,64 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2800);
   }
 
-  // --- 10. Mobile Navigation Toggle ---
+  // --- 10. Mobile Navigation Toggle & Drawer Management ---
   const mobileBtn = document.getElementById('mobile-menu-btn');
   const navMenu = document.getElementById('nav-menu');
 
+  const closeMobileNav = () => {
+    if (navMenu && navMenu.classList.contains('open')) {
+      navMenu.classList.remove('open');
+      if (mobileBtn) {
+        mobileBtn.textContent = '☰';
+        mobileBtn.setAttribute('aria-expanded', 'false');
+      }
+    }
+  };
+
+  const openMobileNav = () => {
+    if (navMenu) {
+      navMenu.classList.add('open');
+      if (mobileBtn) {
+        mobileBtn.textContent = '✕';
+        mobileBtn.setAttribute('aria-expanded', 'true');
+      }
+    }
+  };
+
   if (mobileBtn && navMenu) {
-    mobileBtn.addEventListener('click', () => {
-      navMenu.classList.toggle('open');
-      mobileBtn.textContent = navMenu.classList.contains('open') ? '✕' : '☰';
+    mobileBtn.setAttribute('aria-expanded', 'false');
+
+    mobileBtn.addEventListener('click', (e) => {
+      e.stopPropagation();
+      if (navMenu.classList.contains('open')) {
+        closeMobileNav();
+      } else {
+        openMobileNav();
+      }
+    });
+
+    // Close when clicking outside of the navigation
+    document.addEventListener('click', (e) => {
+      if (navMenu.classList.contains('open')) {
+        const isClickInsideNav = navMenu.contains(e.target) || mobileBtn.contains(e.target);
+        if (!isClickInsideNav) {
+          closeMobileNav();
+        }
+      }
+    });
+
+    // Close on Escape key press
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && navMenu.classList.contains('open')) {
+        closeMobileNav();
+      }
+    });
+
+    // Close automatically when resized past mobile breakpoint
+    window.addEventListener('resize', () => {
+      if (window.innerWidth > 890 && navMenu.classList.contains('open')) {
+        closeMobileNav();
+      }
     });
   }
 
