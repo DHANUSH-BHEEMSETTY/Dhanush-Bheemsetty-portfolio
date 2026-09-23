@@ -216,45 +216,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }, 2800);
   }
 
-  // --- 10. Tech Stack Category Filtering & Dynamic Spotlight ---
-  const filterPills = document.querySelectorAll('.filter-pill');
-  const techCards = document.querySelectorAll('.tech-stack-card');
-
-  if (filterPills.length > 0 && techCards.length > 0) {
-    filterPills.forEach(pill => {
-      pill.addEventListener('click', () => {
-        filterPills.forEach(p => p.classList.remove('active'));
-        pill.classList.add('active');
-
-        const selectedCategory = pill.getAttribute('data-category');
-
-        techCards.forEach(card => {
-          const cardCategory = card.getAttribute('data-category');
-          if (selectedCategory === 'all' || cardCategory === selectedCategory) {
-            card.classList.remove('is-filtered-out');
-            card.style.animation = 'none';
-            card.offsetHeight; // force reflow for smooth re-animation
-            card.style.animation = 'fadeInUp 0.35s cubic-bezier(0.16, 1, 0.3, 1) forwards';
-          } else {
-            card.classList.add('is-filtered-out');
-          }
-        });
-      });
-    });
-
-    // Spotlight cursor tracking across tech cards
-    techCards.forEach(card => {
-      card.addEventListener('mousemove', (e) => {
-        const rect = card.getBoundingClientRect();
-        const x = e.clientX - rect.left;
-        const y = e.clientY - rect.top;
-        card.style.setProperty('--mouse-x', `${x}px`);
-        card.style.setProperty('--mouse-y', `${y}px`);
-      });
-    });
-  }
-
-  // --- 11. Mobile Navigation Toggle ---
+  // --- 10. Mobile Navigation Toggle ---
   const mobileBtn = document.getElementById('mobile-menu-btn');
   const navMenu = document.getElementById('nav-menu');
 
