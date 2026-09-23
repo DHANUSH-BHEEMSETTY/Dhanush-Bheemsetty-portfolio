@@ -159,22 +159,6 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   });
 
-  // --- 7. Milestone Journey Timeline Progress Fill ---
-  const journeySection = document.getElementById('journey');
-  const timelineFill = document.getElementById('timeline-fill');
-
-  if (journeySection && timelineFill) {
-    window.addEventListener('scroll', () => {
-      const rect = journeySection.getBoundingClientRect();
-      const windowHeight = window.innerHeight;
-      
-      if (rect.top <= windowHeight * 0.75 && rect.bottom >= 0) {
-        const progress = Math.min(Math.max((windowHeight * 0.75 - rect.top) / (rect.height * 0.6), 0), 1);
-        timelineFill.style.width = `${progress * 90}%`;
-      }
-    }, { passive: true });
-  }
-
   // --- 8. 3D Perspective Card Tilt on Mouse Move ---
   const projectCards = document.querySelectorAll('.project-card');
   
