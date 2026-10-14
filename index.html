@@ -16,7 +16,7 @@
   <meta property="og:type" content="website" />
 
   <!-- Stylesheet -->
-  <link rel="stylesheet" href="./style.css" />
+  <link rel="stylesheet" href="./style.css?v=2.9" />
   <link rel="icon" href="./4.jpeg" type="image/jpeg" />
 </head>
 
@@ -44,35 +44,29 @@
   </div>
 
   <!-- ==========================================================================
-       Sticky Navigation Bar
+       Sticky Polished Floating Navigation Bar
        ========================================================================== -->
   <header class="site-header" id="main-header">
-    <div class="container nav-wrap">
+    <div class="nav-wrap" id="nav-wrap">
       <a href="#top" class="brand-logo" id="nav-brand">
         dhanush<span class="brand-dot"></span>
       </a>
 
       <ul class="nav-links" id="nav-menu">
         <li><a href="#projects">Ventures & Code</a></li>
-        <li><a href="#sidequests">AI Lab</a></li>
-        <li><a href="#awards">Awards</a></li>
+        <li><a href="#awards">Awards & Certs</a></li>
         <li><a href="#about">About</a></li>
-        <li><a href="#stack">Tech StacK</a></li>
+        <li><a href="#stack">Tech Stack</a></li>
         <li>
           <a href="./Dhanush_Bheemisetty_Resume.pdf" target="_blank" class="nav-resume-link">
             Resume ↗
-          </a>
-        </li>
-        <li class="nav-mobile-only">
-          <a href="#contact" class="nav-mobile-contact">
-            Get in Touch ✉️
           </a>
         </li>
       </ul>
 
       <a href="#contact" class="nav-cta-btn" id="header-contact-btn">
         <span>Get in Touch</span>
-        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
+        <svg width="13" height="13" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"
           stroke-linecap="round" stroke-linejoin="round">
           <line x1="5" y1="12" x2="19" y2="12"></line>
           <polyline points="12 5 19 12 12 19"></polyline>
@@ -90,7 +84,194 @@
     <!-- ==========================================================================
          Hero Section (Design Canvas Transform Motif)
          ========================================================================== -->
-    <section class="hero-section reveal is-visible">
+    <section class="hero-section reveal is-visible" id="hero-section">
+
+      <!-- Interactive Floating Tech Icons (Framer-Motion style Mouse Repel & Spring Physics) -->
+      <div class="hero-floating-icons-container" id="hero-floating-icons-container" aria-hidden="true">
+        <!-- 1. AWS Cloud Practitioner -->
+        <div class="hero-floating-icon" data-index="0" style="top: 10%; left: 5%;">
+          <div class="hero-floating-icon-card float-anim-1">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M16.5 13.5c-.3-.4-1-.7-1.8-.7-.9 0-1.7.5-1.7 1.4 0 .9.6 1.4 1.7 1.4.6 0 1.2-.2 1.8-.5v-1.6zm1.7 4.2c-.7.4-1.7.7-2.7.7-2.3 0-3.6-1.3-3.6-3.4 0-2.3 1.6-3.4 3.7-3.4.9 0 1.7.2 2.3.5v-.5c0-1.2-.7-1.9-2-1.9-.9 0-1.7.3-2.3.8l-.9-1.2c.9-.7 2.1-1.1 3.5-1.1 2.3 0 3.7 1.3 3.7 3.7v4.9h-1.7v-.1zm-8.8-1.7l1.7-6.5h2l-2.7 8.9H8.6L6.8 11.2 5 18.4H3.2L.5 9.5h2l1.7 6.5 1.8-6.5h1.7l1.7 6.4zm13.1 4.5C19.7 22.3 15.4 23 11.2 23 6.6 23 2.7 21.2.6 18.2c-.3-.4 0-.9.5-.6 4.3 2.4 9.4 3.8 14.8 3.8 3.5 0 7.2-.7 10.4-2.1.6-.3 1 .4.5.8z" fill="#FF9900"/>
+              <path d="M22.8 19.3c-.4-.5-2.7-.2-3.7-.1-.3 0-.4-.3-.1-.5 1.8-1.3 4.2-.9 4.6-.4.4.5-.1 3-1.8 4.4-.3.2-.5.1-.4-.2.4-.8 1.8-2.7 1.4-3.2z" fill="#FF9900"/>
+            </svg>
+            <span class="floating-icon-tooltip">AWS Certified</span>
+          </div>
+        </div>
+
+        <!-- 2. Python -->
+        <div class="hero-floating-icon" data-index="1" style="top: 24%; left: 14%;">
+          <div class="hero-floating-icon-card float-anim-2">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M11.9 1.5c-4.4 0-4.1 1.9-4.1 1.9v2h4.2v.6H6.1s-2.8-.3-2.8 4.1 2.5 4.3 2.5 4.3h1.5v-2.1s-.1-2.5 2.5-2.5h4.2s2.4 0 2.4-2.4V3.9s.4-2.4-4.5-2.4zm-2.3 1.3c.4 0 .7.3.7.7s-.3.7-.7.7-.7-.3-.7-.7.3-.7.7-.7z" fill="#387EB8"/>
+              <path d="M12.1 22.5c4.4 0 4.1-1.9 4.1-1.9v-2H12v-.6h5.9s2.8.3 2.8-4.1-2.5-4.3-2.5-4.3h-1.5v2.1s.1 2.5-2.5 2.5h-4.2s-2.4 0-2.4 2.4v5.5s-.4 2.4 4.5 2.4zm2.3-1.3c-.4 0-.7-.3-.7-.7s.3-.7.7-.7.7.3.7.7-.3.7-.7.7z" fill="#FFE052"/>
+            </svg>
+            <span class="floating-icon-tooltip">Python</span>
+          </div>
+        </div>
+
+        <!-- 3. Docker -->
+        <div class="hero-floating-icon" data-index="2" style="top: 42%; left: 4%;">
+          <div class="hero-floating-icon-card float-anim-3">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13 10.5h2v2h-2v-2zm-3 0h2v2h-2v-2zm-3 0h2v2H7v-2zm3-3h2v2h-2V7.5zm3 0h2v2h-2V7.5zm3 0h2v2h-2V7.5zm-9 0h2v2H7V7.5zm6-3h2v2h-2V4.5zm-3 0h2v2h-2V4.5zM1 13.5c.3 3.8 3.5 6.8 7.3 6.8 5.8 0 10.1-3.6 11.5-8.5.8.1 1.6 0 2.2-.4.4-.3.7-.7.9-1.2-1.1-.4-2.2-.2-3.1.3-.4-1.2-1.3-2.1-2.4-2.7l-.6-.3-.4.5c-.8 1.1-1.3 2.5-1.4 3.9H1v1.6z" fill="#2496ED"/>
+            </svg>
+            <span class="floating-icon-tooltip">Docker</span>
+          </div>
+        </div>
+
+        <!-- 4. PyTorch -->
+        <div class="hero-floating-icon" data-index="3" style="top: 58%; left: 13%;">
+          <div class="hero-floating-icon-card float-anim-4">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12.8 3.5l1.4-1.4a9.5 9.5 0 1 0 5 13.5l-1.8-.9a7.5 7.5 0 1 1-4-10.4l-.6-.8z" fill="#EE4C2C"/>
+              <circle cx="15.8" cy="4.8" r="1.3" fill="#EE4C2C"/>
+            </svg>
+            <span class="floating-icon-tooltip">PyTorch</span>
+          </div>
+        </div>
+
+        <!-- 5. OpenCV -->
+        <div class="hero-floating-icon" data-index="4" style="top: 68%; left: 6%;">
+          <div class="hero-floating-icon-card float-anim-1">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="6" r="3.5" stroke="#EA4335" stroke-width="2"/>
+              <circle cx="6.5" cy="16" r="3.5" stroke="#34A853" stroke-width="2"/>
+              <circle cx="17.5" cy="16" r="3.5" stroke="#4285F4" stroke-width="2"/>
+            </svg>
+            <span class="floating-icon-tooltip">OpenCV & YOLO</span>
+          </div>
+        </div>
+
+        <!-- 6. FastAPI -->
+        <div class="hero-floating-icon" data-index="5" style="bottom: 12%; left: 14%;">
+          <div class="hero-floating-icon-card float-anim-2">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#009688"/>
+              <path d="M13.2 4L6 13.5h5.4L10.8 20l7.2-9.5h-5.4L13.2 4z" fill="white"/>
+            </svg>
+            <span class="floating-icon-tooltip">FastAPI</span>
+          </div>
+        </div>
+
+        <!-- 7. GitHub -->
+        <div class="hero-floating-icon" data-index="6" style="top: 10%; right: 5%;">
+          <div class="hero-floating-icon-card float-anim-3">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="floating-tech-svg text-dark" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 .3c-6.6 0-12 5.4-12 12 0 5.3 3.4 9.8 8.2 11.4.6.1.8-.3.8-.6v-2c-3.3.7-4-1.6-4-1.6-.5-1.4-1.3-1.8-1.3-1.8-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1.1 1.8 2.8 1.3 3.5 1 .1-.8.4-1.3.8-1.6-2.7-.3-5.5-1.3-5.5-5.9 0-1.3.5-2.4 1.2-3.2-.1-.3-.5-1.5.1-3.2 0 0 1-.3 3.3 1.2 1-.3 2-.4 3-.4s2 .1 3 .4c2.3-1.6 3.3-1.2 3.3-1.2.7 1.7.2 2.9.1 3.2.8.8 1.2 1.9 1.2 3.2 0 4.6-2.8 5.6-5.5 5.9.4.4.8 1.1.8 2.2v3.3c0 .3.2.7.8.6 4.8-1.6 8.2-6.1 8.2-11.4 0-6.6-5.4-12-12-12z"/>
+            </svg>
+            <span class="floating-icon-tooltip">GitHub</span>
+          </div>
+        </div>
+
+        <!-- 8. Gemini / AI -->
+        <div class="hero-floating-icon" data-index="7" style="top: 24%; right: 14%;">
+          <div class="hero-floating-icon-card float-anim-4">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <defs>
+                <linearGradient id="hero-gemini-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+                  <stop offset="0%" stop-color="#4E75FF" />
+                  <stop offset="50%" stop-color="#9B72CF" />
+                  <stop offset="100%" stop-color="#FF6B8B" />
+                </linearGradient>
+              </defs>
+              <path d="M12 2C12 7.5 7.5 12 2 12C7.5 12 12 16.5 12 22C12 16.5 16.5 12 22 12C16.5 12 12 7.5 12 2Z" fill="url(#hero-gemini-grad)"/>
+            </svg>
+            <span class="floating-icon-tooltip">Google Gemini</span>
+          </div>
+        </div>
+
+        <!-- 9. TypeScript -->
+        <div class="hero-floating-icon" data-index="8" style="top: 42%; right: 4%;">
+          <div class="hero-floating-icon-card float-anim-1">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <rect width="24" height="24" rx="4" fill="#3178C6"/>
+              <path d="M11.2 12.3h-2.3V20H7v-7.7H4.7v-1.8h6.5v1.8zm3.3 4.2c.4.3.9.5 1.5.5.7 0 1.1-.3 1.1-.7 0-.4-.3-.6-1-.8l-.8-.3c-1.3-.4-2-1.1-2-2.3 0-1.5 1.2-2.6 3-2.6 1.1 0 1.9.3 2.5.8l-.6 1.6c-.5-.4-1.1-.6-1.8-.6-.6 0-1 .3-1 .7 0 .4.3.6.9.8l.8.3c1.4.5 2.1 1.2 2.1 2.4 0 1.6-1.2 2.7-3.2 2.7-1.3 0-2.3-.4-3-1l.5-1.5z" fill="white"/>
+            </svg>
+            <span class="floating-icon-tooltip">TypeScript</span>
+          </div>
+        </div>
+
+        <!-- 10. React -->
+        <div class="hero-floating-icon" data-index="9" style="top: 58%; right: 13%;">
+          <div class="hero-floating-icon-card float-anim-2">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="2.2" fill="#00B4D8"/>
+              <ellipse cx="12" cy="12" rx="10" ry="4" stroke="#00B4D8" stroke-width="1.3"/>
+              <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(60 12 12)" stroke="#00B4D8" stroke-width="1.3"/>
+              <ellipse cx="12" cy="12" rx="10" ry="4" transform="rotate(120 12 12)" stroke="#00B4D8" stroke-width="1.3"/>
+            </svg>
+            <span class="floating-icon-tooltip">React.js</span>
+          </div>
+        </div>
+
+        <!-- 11. Supabase -->
+        <div class="hero-floating-icon" data-index="10" style="top: 68%; right: 6%;">
+          <div class="hero-floating-icon-card float-anim-3">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M13.3 2.8c-.5-.7-1.6-.4-1.7.5L10.8 12h8.3c.9 0 1.3 1.1.7 1.7L10.7 21.2c-.5.7-1.6.4-1.7-.5L9.8 12H1.5c-.9 0-1.3-1.1-.7-1.7L9.9 2.8c.4-.6 1.4-.4 1.7.5l.3 1.2 1.4-1.7z" fill="#3ECF8E"/>
+            </svg>
+            <span class="floating-icon-tooltip">Supabase & SQL</span>
+          </div>
+        </div>
+
+        <!-- 12. Claude AI -->
+        <div class="hero-floating-icon" data-index="11" style="bottom: 12%; right: 14%;">
+          <div class="hero-floating-icon-card float-anim-4">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L14.5 9.5L22 12L14.5 14.5L12 22L9.5 14.5L2 12L9.5 9.5L12 2Z" fill="#D97757"/>
+            </svg>
+            <span class="floating-icon-tooltip">Claude / Anthropic</span>
+          </div>
+        </div>
+
+        <!-- 13. Next.js -->
+        <div class="hero-floating-icon" data-index="12" style="top: 7%; left: 28%;">
+          <div class="hero-floating-icon-card float-anim-1">
+            <svg viewBox="0 0 24 24" fill="currentColor" class="floating-tech-svg text-dark" xmlns="http://www.w3.org/2000/svg">
+              <circle cx="12" cy="12" r="10" fill="#0D1117"/>
+              <path d="M15.5 15.5L8.5 7.5H7v9h1.5v-6.5l6.5 7.5h.5z" fill="white"/>
+              <rect x="15.5" y="7.5" width="1.5" height="5.5" fill="white"/>
+            </svg>
+            <span class="floating-icon-tooltip">Next.js</span>
+          </div>
+        </div>
+
+        <!-- 14. Node.js -->
+        <div class="hero-floating-icon" data-index="13" style="top: 7%; right: 28%;">
+          <div class="hero-floating-icon-card float-anim-2">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2L3 7.2v10.4L12 22l9-4.4V7.2L12 2z" fill="#5FA04E"/>
+              <path d="M12 5.5l5.5 3.2v6.4L12 18.3 6.5 15.1V8.7L12 5.5z" fill="#222222"/>
+            </svg>
+            <span class="floating-icon-tooltip">Node.js</span>
+          </div>
+        </div>
+
+        <!-- 15. Figma -->
+        <div class="hero-floating-icon" data-index="14" style="bottom: 6%; left: 28%;">
+          <div class="hero-floating-icon-card float-anim-3">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <path d="M12 2a5 5 0 0 0-5 5 5 5 0 0 0 5 5h5V2h-5z" fill="#F24E1E"/>
+              <path d="M7 12a5 5 0 0 0 5 5 5 5 0 0 0 5-5V7H7v5z" fill="#A259FF"/>
+              <path d="M7 17a5 5 0 0 0 5 5 5 5 0 0 0 5-5v-5H7v5z" fill="#0ACF83"/>
+            </svg>
+            <span class="floating-icon-tooltip">Figma UI/UX</span>
+          </div>
+        </div>
+
+        <!-- 16. Linux & Terminal -->
+        <div class="hero-floating-icon" data-index="15" style="bottom: 6%; right: 28%;">
+          <div class="hero-floating-icon-card float-anim-4">
+            <svg viewBox="0 0 24 24" fill="none" class="floating-tech-svg" xmlns="http://www.w3.org/2000/svg">
+              <rect x="2" y="4" width="20" height="16" rx="4" fill="#0F172A"/>
+              <path d="M6 9l4 3-4 3M12 15h6" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+            <span class="floating-icon-tooltip">Linux & CLI</span>
+          </div>
+        </div>
+      </div>
+
       <div class="container hero-content">
 
         <!-- Active Status Pill -->
@@ -117,7 +298,7 @@
         </h2>
         <p class="hero-bio">
           I build intelligent, production-ready software at startup speed. Specializing in real-time
-          Computer Vision pipelines, LLM architectures with deterministic scoring, and cloud-native backends.
+          Computer Vision pipelines, LLM architectures with deterministic scoring, and AWS-certified cloud-native backends.
           1st Place Winner at VLaunch Pad 2025.
         </p>
 
@@ -134,26 +315,6 @@
           <a href="#about" class="btn-secondary" id="hero-about-btn">
             <span>About Me</span>
           </a>
-        </div>
-
-        <!-- Key Metrics Strip -->
-        <div class="metrics-strip reveal stagger-2">
-          <div class="metric-item">
-            <div class="metric-num" data-target="8.84">8.84</div>
-            <div class="metric-label">B.Tech CGPA (VIT-AP)</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-num">#1 Winner</div>
-            <div class="metric-label">VLaunch Pad 2025</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-num">5+ Apps</div>
-            <div class="metric-label">Shipped & Live</div>
-          </div>
-          <div class="metric-item">
-            <div class="metric-num">&lt;100ms</div>
-            <div class="metric-label">Edge CV Detection</div>
-          </div>
         </div>
 
       </div>
@@ -175,311 +336,155 @@
 
         <div class="projects-stack">
 
-          <!-- Project 1: HoverCharge -->
-          <article class="project-card reveal stagger-1" id="project-hovercharge">
-            <div class="project-visual visual-hovercharge">
-              <div class="project-img-wrapper">
-                <img src="./hovercharge_preview.jpg" alt="HoverCharge EV Fleet Wireless Charging Dashboard"
-                  class="project-img-screen" />
+          <!-- Card 0: HoverCharge -->
+          <article class="project-card" style="--card-index: 0; --card-color: #0F172A;" data-card-index="0" id="project-hovercharge">
+            <div class="stack-card-inner">
+              <div class="stack-card-header">
+                <span class="stack-badge badge-winner">🏆 1ST PLACE WINNER</span>
+                <span class="stack-year">2025</span>
               </div>
-              <div class="pointer-pill">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M12 2v20M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6" />
-                </svg>
-                <span>Winner @ VLaunch Pad '25</span>
-              </div>
-            </div>
-
-            <div class="project-content">
-              <div>
-                <div class="project-top-row">
-                  <span class="project-badge-pill badge-winner">🏆 1ST PLACE WINNER</span>
-                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-light);">2025</span>
-                </div>
-                <h3 class="project-title">HoverCharge — EV Wireless Charging Startup</h3>
-                <p class="project-tagline">
-                  An on-demand mobile EV wireless charging discovery platform. Features a brutalist, responsive UI,
-                  interactive Google Gemini AI assistant for real-time driver telemetry queries, and live Chart.js
-                  fleet economics.
-                </p>
-
-                <!-- Discussion & Stay Connected Callout -->
-                <div class="project-discuss-callout">
-                  <div class="discuss-icon">💡</div>
-                  <div class="discuss-text">
-                    <b>Want to discuss this EV venture or explore the architecture?</b>
-                    Go take a view at the live <a href="https://hovercharge-react.onrender.com/" target="_blank"
-                      class="discuss-link">HoverCharge Website ↗</a>!
-                    I'm actively sharing my 0-to-1 launches and open-source experiments—<a
-                      href="https://www.linkedin.com/in/dhanush-bheemisetty/" target="_blank" class="discuss-link">stay
-                      connected on LinkedIn</a> & <a href="https://github.com/DHANUSH-BHEEMSETTY" target="_blank"
-                      class="discuss-link">GitHub</a> to collaborate on what's next.
+              <h3 class="stack-card-title">HoverCharge — EV Wireless Charging Startup</h3>
+              <div class="stack-card-body">
+                <div class="stack-card-left">
+                  <p class="stack-card-desc">
+                    An on-demand mobile EV wireless charging discovery platform. Features a brutalist, responsive UI, interactive Google Gemini AI assistant for real-time driver telemetry queries, and live Chart.js fleet economics.
+                  </p>
+                  <div class="stack-card-tags">
+                    <span>React 19</span>
+                    <span>Vite</span>
+                    <span>Gemini API</span>
+                    <span>Chart.js</span>
+                    <span>CSS3 Animations</span>
+                  </div>
+                  <div class="stack-card-action">
+                    <a href="https://hovercharge-react.onrender.com/" target="_blank" class="stack-see-more">
+                      <span>View Live Demo</span>
+                      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z" fill="currentColor"/>
+                      </svg>
+                    </a>
                   </div>
                 </div>
-
-                <div class="meta-grid">
-                  <div class="meta-box">
-                    <div class="meta-label">My Role</div>
-                    <div class="meta-value">Founder & Lead Builder</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Team</div>
-                    <div class="meta-value">VLaunch Pad Finalists</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Type</div>
-                    <div class="meta-value">Startup Venture MVP</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Duration</div>
-                    <div class="meta-value">2 Months (2025)</div>
+                <div class="stack-card-right">
+                  <div class="stack-card-imgframe">
+                    <img src="./hovercharge_preview.jpg" alt="HoverCharge EV Fleet Wireless Charging Dashboard" class="stack-card-img" />
                   </div>
                 </div>
-
-                <div class="tech-pills">
-                  <span class="tech-chip">React 19</span>
-                  <span class="tech-chip">Vite</span>
-                  <span class="tech-chip">Gemini API</span>
-                  <span class="tech-chip">Chart.js</span>
-                  <span class="tech-chip">CSS3 Animations</span>
-                </div>
-              </div>
-
-              <div class="project-actions">
-                <a href="https://hovercharge-react.onrender.com/" target="_blank" class="btn-card-primary"
-                  id="hovercharge-demo-btn">
-                  <span>View Live Demo</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
-                <a href="https://drive.google.com/file/d/1wEuhZrC7hCYjdq86LnA1EEZkBDLjqNnJ/view" target="_blank"
-                  class="btn-card-secondary">
-                  <span>Award Letter</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
-                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"></path>
-                    <polyline points="14 2 14 8 20 8"></polyline>
-                    <line x1="16" y1="13" x2="8" y2="13"></line>
-                    <line x1="16" y1="17" x2="8" y2="17"></line>
-                    <polyline points="10 9 9 9 8 9"></polyline>
-                  </svg>
-                </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 2: Smart Resume Screener -->
-          <article class="project-card reveal stagger-2" id="project-screener">
-            <div class="project-visual visual-screener">
-              <div class="project-img-wrapper">
-                <img src="./screener_preview.jpg" alt="Smart Resume Screener Talent Matching Dashboard"
-                  class="project-img-screen" />
+          <!-- Card 1: Smart Resume Screener -->
+          <article class="project-card" style="--card-index: 1; --card-color: #1E1B4B;" data-card-index="1" id="project-screener">
+            <div class="stack-card-inner">
+              <div class="stack-card-header">
+                <span class="stack-badge badge-live">🟢 WENT LIVE</span>
+                <span class="stack-year">2025</span>
               </div>
-              <div class="pointer-pill" style="background: rgba(124, 58, 237, 0.92);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <circle cx="12" cy="12" r="10" />
-                  <path d="m9 12 2 2 4-4" />
-                </svg>
-                <span>Explainable AI Engine</span>
-              </div>
-            </div>
-
-            <div class="project-content">
-              <div>
-                <div class="project-top-row">
-                  <span class="project-badge-pill badge-live">🟢 WENT LIVE</span>
-                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-light);">2025</span>
-                </div>
-                <h3 class="project-title">Smart Resume Screener — Explainable AI Pipeline</h3>
-                <p class="project-tagline">
-                  Eliminates LLM hallucination in recruitment screening. Decouples structured factual extraction (Google
-                  Gemini 1.5 Flash + Zod) from a mathematical deterministic scoring engine, serving audit-ready match
-                  reasoning cards in React.
-                </p>
-
-                <div class="meta-grid">
-                  <div class="meta-box">
-                    <div class="meta-label">My Role</div>
-                    <div class="meta-value">Full-Stack AI Engineer</div>
+              <h3 class="stack-card-title">Smart Resume Screener — Explainable AI Pipeline</h3>
+              <div class="stack-card-body">
+                <div class="stack-card-left">
+                  <p class="stack-card-desc">
+                    Eliminates LLM hallucination in recruitment screening. Decouples structured factual extraction (Google Gemini 1.5 Flash + Zod) from a mathematical deterministic scoring engine, serving audit-ready match reasoning cards.
+                  </p>
+                  <div class="stack-card-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Gemini 1.5 Flash</span>
+                    <span>Zod</span>
+                    <span>Tailwind CSS</span>
                   </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Team</div>
-                    <div class="meta-value">Solo Developer</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Type</div>
-                    <div class="meta-value">Production Web App</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Duration</div>
-                    <div class="meta-value">3 Weeks</div>
+                  <div class="stack-card-action">
+                    <a href="https://github.com/DHANUSH-BHEEMSETTY/RESUME_SCREENER" target="_blank" class="stack-see-more">
+                      <span>View GitHub Code</span>
+                      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z" fill="currentColor"/>
+                      </svg>
+                    </a>
                   </div>
                 </div>
-
-                <div class="tech-pills">
-                  <span class="tech-chip">React</span>
-                  <span class="tech-chip">TypeScript</span>
-                  <span class="tech-chip">Gemini 1.5 Flash</span>
-                  <span class="tech-chip">Zod</span>
-                  <span class="tech-chip">Tailwind CSS</span>
+                <div class="stack-card-right">
+                  <div class="stack-card-imgframe">
+                    <img src="./screener_preview.jpg" alt="Smart Resume Screener Dashboard" class="stack-card-img" />
+                  </div>
                 </div>
-              </div>
-
-              <div class="project-actions">
-                <a href="https://github.com/DHANUSH-BHEEMSETTY/RESUME_SCREENER" target="_blank" class="btn-card-primary"
-                  id="screener-github-btn">
-                  <span>View GitHub Code</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg>
-                </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 3: Real-Time Restricted Area Monitoring -->
-          <article class="project-card reveal stagger-1" id="project-restricted">
-            <div class="project-visual visual-restricted">
-              <div class="project-img-wrapper">
-                <img src="./surveillance_preview.jpg" alt="YOLOv8 Edge Computer Vision Security Operations Console"
-                  class="project-img-screen" />
+          <!-- Card 2: Real-Time Restricted Area Surveillance -->
+          <article class="project-card" style="--card-index: 2; --card-color: #1C1917;" data-card-index="2" id="project-restricted">
+            <div class="stack-card-inner">
+              <div class="stack-card-header">
+                <span class="stack-badge badge-security">🛡️ EDGE AI SYSTEM</span>
+                <span class="stack-year">2025</span>
               </div>
-              <div class="pointer-pill" style="background: rgba(220, 38, 38, 0.92);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z" />
-                </svg>
-                <span>Sub-100ms Alert Pipeline</span>
-              </div>
-            </div>
-
-            <div class="project-content">
-              <div>
-                <div class="project-top-row">
-                  <span class="project-badge-pill badge-security">🛡️ EDGE AI SYSTEM</span>
-                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-light);">2025</span>
-                </div>
-                <h3 class="project-title">Real-Time Restricted Area Surveillance</h3>
-                <p class="project-tagline">
-                  Ultra-low latency computer vision surveillance pipeline. Edge clients run YOLOv8 object detection on
-                  high-FPS feeds, pushing event payloads to FastAPI and broadcasting real-time intrusion cards to a
-                  Streamlit dashboard over WebSockets.
-                </p>
-
-                <div class="meta-grid">
-                  <div class="meta-box">
-                    <div class="meta-label">My Role</div>
-                    <div class="meta-value">AI & Systems Engineer</div>
+              <h3 class="stack-card-title">Real-Time Restricted Area Surveillance</h3>
+              <div class="stack-card-body">
+                <div class="stack-card-left">
+                  <p class="stack-card-desc">
+                    Ultra-low latency computer vision surveillance pipeline. Edge clients run YOLOv8 object detection on high-FPS feeds, pushing event payloads to FastAPI and broadcasting real-time intrusion cards to a dashboard over WebSockets.
+                  </p>
+                  <div class="stack-card-tags">
+                    <span>Python</span>
+                    <span>YOLOv8</span>
+                    <span>OpenCV</span>
+                    <span>FastAPI</span>
+                    <span>Streamlit</span>
+                    <span>WebSockets</span>
                   </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Team</div>
-                    <div class="meta-value">Solo Developer</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Type</div>
-                    <div class="meta-value">Computer Vision & Edge</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Duration</div>
-                    <div class="meta-value">1 Month</div>
+                  <div class="stack-card-action">
+                    <a href="https://github.com/DHANUSH-BHEEMSETTY/Real_Time_Restricted_Area_Monitoring_System" target="_blank" class="stack-see-more">
+                      <span>View Source Code</span>
+                      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z" fill="currentColor"/>
+                      </svg>
+                    </a>
                   </div>
                 </div>
-
-                <div class="tech-pills">
-                  <span class="tech-chip">Python</span>
-                  <span class="tech-chip">YOLOv8</span>
-                  <span class="tech-chip">OpenCV</span>
-                  <span class="tech-chip">FastAPI</span>
-                  <span class="tech-chip">Streamlit</span>
-                  <span class="tech-chip">Supabase</span>
-                  <span class="tech-chip">WebSockets</span>
+                <div class="stack-card-right">
+                  <div class="stack-card-imgframe">
+                    <img src="./surveillance_preview.jpg" alt="YOLOv8 Edge Computer Vision Security Operations Console" class="stack-card-img" />
+                  </div>
                 </div>
-              </div>
-
-              <div class="project-actions">
-                <a href="https://github.com/DHANUSH-BHEEMSETTY/Real_Time_Restricted_Area_Monitoring_System"
-                  target="_blank" class="btn-card-primary" id="yolo-github-btn">
-                  <span>View Source Code</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path
-                      d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22">
-                    </path>
-                  </svg>
-                </a>
               </div>
             </div>
           </article>
 
-          <!-- Project 4: Legacy Wallet -->
-          <article class="project-card reveal stagger-2" id="project-wallet">
-            <div class="project-visual visual-wallet">
-              <div class="project-img-wrapper">
-                <img src="./wallet_preview.jpg" alt="Legacy Wallet Zero-Trust Encrypted Digital Vault Interface"
-                  class="project-img-screen" />
+          <!-- Card 3: Legacy Wallet -->
+          <article class="project-card" style="--card-index: 3; --card-color: #06281E;" data-card-index="3" id="project-wallet">
+            <div class="stack-card-inner">
+              <div class="stack-card-header">
+                <span class="stack-badge badge-live">🟢 LIVE DEMO</span>
+                <span class="stack-year">2025</span>
               </div>
-              <div class="pointer-pill" style="background: rgba(16, 185, 129, 0.92);">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <rect x="3" y="11" width="18" height="11" rx="2" ry="2" />
-                  <path d="M7 11V7a5 5 0 0 1 10 0v4" />
-                </svg>
-                <span>Zero-Trust PostgreSQL RLS</span>
-              </div>
-            </div>
-
-            <div class="project-content">
-              <div>
-                <div class="project-top-row">
-                  <span class="project-badge-pill badge-live">🟢 LIVE DEMO</span>
-                  <span style="font-family: var(--font-mono); font-size: 0.8rem; color: var(--text-light);">2025</span>
-                </div>
-                <h3 class="project-title">Legacy Wallet — Cloud-Native Digital Inheritance</h3>
-                <p class="project-tagline">
-                  A privacy-focused digital inheritance platform allowing users to allocate confidential
-                  digital/physical assets, attach audio/video messages, and draft AI-guided legal wills. Enforces strict
-                  PostgreSQL Row-Level Security (RLS) policies.
-                </p>
-
-                <div class="meta-grid">
-                  <div class="meta-box">
-                    <div class="meta-label">My Role</div>
-                    <div class="meta-value">Full-Stack & Security Engineer</div>
+              <h3 class="stack-card-title">Legacy Wallet — Cloud-Native Digital Inheritance</h3>
+              <div class="stack-card-body">
+                <div class="stack-card-left">
+                  <p class="stack-card-desc">
+                    A privacy-focused digital inheritance platform allowing users to allocate confidential digital/physical assets, attach audio/video messages, and draft AI-guided legal wills. Enforces strict PostgreSQL Row-Level Security (RLS) policies.
+                  </p>
+                  <div class="stack-card-tags">
+                    <span>React</span>
+                    <span>TypeScript</span>
+                    <span>Supabase</span>
+                    <span>PostgreSQL</span>
+                    <span>Tailwind CSS</span>
                   </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Team</div>
-                    <div class="meta-value">Solo Developer</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Type</div>
-                    <div class="meta-value">FinTech / Cloud Vault</div>
-                  </div>
-                  <div class="meta-box">
-                    <div class="meta-label">Duration</div>
-                    <div class="meta-value">4 Weeks</div>
+                  <div class="stack-card-action">
+                    <a href="https://legacy-wallet-yjyw.onrender.com/" target="_blank" class="stack-see-more">
+                      <span>View Live Platform</span>
+                      <svg width="22" height="12" viewBox="0 0 22 12" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M21.5303 6.53033C21.8232 6.23744 21.8232 5.76256 21.5303 5.46967L16.7574 0.696699C16.4645 0.403806 15.9896 0.403806 15.6967 0.696699C15.4038 0.989592 15.4038 1.46447 15.6967 1.75736L19.9393 6L15.6967 10.2426C15.4038 10.5355 15.4038 11.0104 15.6967 11.3033C15.9896 11.5962 16.4645 11.5962 16.7574 11.3033L21.5303 6.53033ZM0 6.75L21 6.75V5.25L0 5.25L0 6.75Z" fill="currentColor"/>
+                      </svg>
+                    </a>
                   </div>
                 </div>
-
-                <div class="tech-pills">
-                  <span class="tech-chip">React</span>
-                  <span class="tech-chip">TypeScript</span>
-                  <span class="tech-chip">Supabase</span>
-                  <span class="tech-chip">PostgreSQL (RLS)</span>
-                  <span class="tech-chip">Tailwind CSS</span>
+                <div class="stack-card-right">
+                  <div class="stack-card-imgframe">
+                    <img src="./wallet_preview.jpg" alt="Legacy Wallet Zero-Trust Encrypted Digital Vault Interface" class="stack-card-img" />
+                  </div>
                 </div>
-              </div>
-
-              <div class="project-actions">
-                <a href="https://legacy-wallet-yjyw.onrender.com/" target="_blank" class="btn-card-primary"
-                  id="wallet-demo-btn">
-                  <span>View Live Demo</span>
-                  <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                    <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                    <polyline points="15 3 21 3 21 9"></polyline>
-                    <line x1="10" y1="14" x2="21" y2="3"></line>
-                  </svg>
-                </a>
               </div>
             </div>
           </article>
@@ -489,132 +494,167 @@
     </section>
 
     <!-- ==========================================================================
-         Side Quests & AI Lab (Kartik Goel 3-Column Grid Motif)
-         ========================================================================== -->
-    <section class="section-wrap" id="sidequests"
-      style="background: #F4F5F8; border-top: 1px solid var(--border-light); border-bottom: 1px solid var(--border-light);">
-      <div class="container">
-
-        <div class="section-head reveal">
-          <span class="section-tag" style="background: var(--accent-emerald-light); color: var(--accent-emerald);">AI
-            Lab & Side Quests</span>
-          <h2 class="section-title">Experiments, Tools & Daily Passions</h2>
-          <p class="section-desc">
-            How I stay ahead of the curve: agentic developer loops, daily frontier AI tracking, and automated
-            intelligence.
-          </p>
-        </div>
-
-        <div class="sidequests-grid">
-
-          <!-- Side Quest 1: Claude Code & Vibe Coding -->
-          <div class="sidequest-card reveal stagger-1">
-            <div>
-              <div class="sidequest-icon">⚡</div>
-              <h3 class="sidequest-title">Claude Code & Vibe Coding</h3>
-              <p class="sidequest-desc">
-                Early adopter and power user of Anthropic's Claude Code and agentic CLI workflows.
-                I harness terminal subagents, automated test generation, and AI-native refactoring to prototype and ship
-                production code at 5x–10x velocity.
-              </p>
-            </div>
-            <div class="sidequest-footer">
-              <span class="sidequest-meta">High-Velocity Shipping</span>
-              <span class="sidequest-arrow">→</span>
-            </div>
-          </div>
-
-          <!-- Side Quest 2: The Bleeding-Edge AI Radar -->
-          <div class="sidequest-card reveal stagger-2">
-            <div>
-              <div class="sidequest-icon">📱</div>
-              <h3 class="sidequest-title">The Bleeding-Edge AI Radar</h3>
-              <p class="sidequest-desc">
-                My daily learning habit: staying plugged into the latest AI releases, prompt engineering gems, and
-                developer tricks & tips shared across tech blogs on Instagram, X/Twitter, and popular developer social
-                channels. Constantly testing new techniques in real-world workflows to stay ahead.
-              </p>
-            </div>
-            <div class="sidequest-footer">
-              <span class="sidequest-meta">Instagram & Social AI Blogs</span>
-              <span class="sidequest-arrow">→</span>
-            </div>
-          </div>
-
-          <!-- Side Quest 3: n8n Automation & Cloud Foundations -->
-          <div class="sidequest-card reveal stagger-3">
-            <div>
-              <div class="sidequest-icon">☁️</div>
-              <h3 class="sidequest-title">n8n Automation & Cloud Foundations</h3>
-              <p class="sidequest-desc">
-                Currently actively learning workflow automation with n8n, event-driven pipelines, and cloud
-                infrastructure foundations. Enthusiastic about bridging backend code with scalable cloud systems, and
-                actively open to learning opportunities, internships, and mentorship to grow my cloud expertise.
-              </p>
-            </div>
-            <div class="sidequest-footer">
-              <span class="sidequest-meta">Cloud Foundations • Open to Learn</span>
-              <span class="sidequest-arrow">→</span>
-            </div>
-          </div>
-
-        </div>
-
-      </div>
-    </section>
-
-    <!-- ==========================================================================
-         Visual Proof & Award Showcase (VLaunch Pad 2025)
+         Visual Proof & Award Showcase (Honors, Awards & Verified Credentials)
          ========================================================================== -->
     <section class="section-wrap" id="awards">
       <div class="container">
 
         <div class="section-head reveal">
-          <span class="section-tag" style="background: var(--accent-amber-light); color: var(--accent-amber);">Startup
-            Competition Win</span>
-          <h2 class="section-title">VLaunch Pad 2025 — 1st Place Victory</h2>
+          <span class="section-tag" style="background: var(--accent-amber-light); color: var(--accent-amber);">Validated
+            Excellence</span>
+          <h2 class="section-title">Honors, Awards & Certifications</h2>
           <p class="section-desc">
-            Physical proof of 0-to-1 execution, startup pitching, and ministerial recognition.
+            Tangible proof of startup leadership, ministerial commendation, and globally accredited cloud engineering standards.
           </p>
         </div>
 
-        <div class="award-showcase-box reveal stagger-1">
-          <div class="award-photos-grid">
-            <div class="award-photo-wrap">
-              <img src="./2.jpeg" alt="Dhanush Bheemisetty with VLaunch Pad 2025 First Prize Certificate and Plaque"
-                class="award-photo" />
-              <div class="award-caption">🥇 Award Plaque & Certificate at VIT-AP</div>
-            </div>
-            <div class="award-photo-wrap">
-              <img src="./1.jpeg" alt="Live presentation and demo of HoverCharge to faculty and jury"
-                class="award-photo" />
-              <div class="award-caption">⚡ Live Pitch & Defense to Evaluators</div>
-            </div>
-          </div>
+        <!-- Aceternity Animated Testimonials Component Container -->
+        <div class="animated-testimonials-wrap reveal stagger-1">
+          <div class="testimonials-grid">
+            
+            <!-- Left Column: 3D Stacked Cards Deck -->
+            <div class="testimonials-deck-col">
+              <div class="testimonials-deck-perspective">
+                <div class="testimonials-deck" id="awards-deck" aria-label="Certifications and Awards 3D Deck">
+                  
+                  <!-- Card 0: AWS Certified Cloud Practitioner -->
+                  <div class="testimonial-card is-active" data-index="0" id="award-card-0" title="AWS Certified Cloud Practitioner">
+                    <div class="card-inner">
+                      <img src="./aws_certified_cloud_practitioner.png"
+                        alt="AWS Certified Cloud Practitioner Official Certificate - Dhanush Bheemisetty"
+                        class="card-img cert-img-style" />
+                      <div class="card-badge-overlay">
+                        <span class="card-badge-pill aws-pill">
+                          <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor">
+                            <path d="M19.35 10.04C18.67 6.59 15.64 4 12 4 9.11 4 6.6 5.64 5.35 8.04 2.34 8.36 0 10.91 0 14c0 3.31 2.69 6 6 6h13c2.76 0 5-2.24 5-5 0-2.64-2.05-4.78-4.65-4.96z"/>
+                          </svg>
+                          <span>AWS Certified</span>
+                        </span>
+                      </div>
+                      <div class="card-glass-glow"></div>
+                    </div>
+                  </div>
 
-          <div class="award-details">
-            <span class="award-header-badge">🏆 UNION MINISTER RECOGNITION</span>
-            <h3 class="award-heading">Ranked #1 Startup Concept Across Universities</h3>
-            <p class="award-description">
-              Pitched **HoverCharge** (on-demand EV wireless charging network) against dozens of university startup
-              ventures before a panel of venture capitalists, industry evaluators, and **Dr. Pemmasani Chandra Shekhar**
-              (Union Minister of State for Rural Development and Communications, Government of India).
-            </p>
-            <div class="award-callout">
-              <b>Evaluated on:</b> Real-time AI fleet dispatch architecture, financial unit economics, and consumer
-              adoption feasibility.
+                  <!-- Card 1: VLaunch Pad 1st Place Victory -->
+                  <div class="testimonial-card" data-index="1" id="award-card-1" title="1st Place Winner - VLaunch Pad 2025">
+                    <div class="card-inner">
+                      <img src="./2.jpeg"
+                        alt="Dhanush Bheemisetty with VLaunch Pad 2025 First Prize Certificate and Plaque"
+                        class="card-img" />
+                      <div class="card-badge-overlay">
+                        <span class="card-badge-pill winner-pill">
+                          <span>🥇 1st Place Winner</span>
+                        </span>
+                      </div>
+                      <div class="card-glass-glow"></div>
+                    </div>
+                  </div>
+
+                  <!-- Card 2: Live Pitch & Jury Defense -->
+                  <div class="testimonial-card" data-index="2" id="award-card-2" title="Live Pitch & Jury Defense">
+                    <div class="card-inner">
+                      <img src="./1.jpeg"
+                        alt="Live presentation and demo of HoverCharge to faculty and jury"
+                        class="card-img" />
+                      <div class="card-badge-overlay">
+                        <span class="card-badge-pill defense-pill">
+                          <span>⚡ Live Jury Defense</span>
+                        </span>
+                      </div>
+                      <div class="card-glass-glow"></div>
+                    </div>
+                  </div>
+
+                  <!-- Card 3: Championship Stage Commendation -->
+                  <div class="testimonial-card" data-index="3" id="award-card-3" title="Championship Stage Commendation">
+                    <div class="card-inner">
+                      <img src="./3.jpeg"
+                        alt="VLaunch Pad 2025 Championship Trophy Plaque"
+                        class="card-img" />
+                      <div class="card-badge-overlay">
+                        <span class="card-badge-pill stage-pill">
+                          <span>🏆 Stage Commendation</span>
+                        </span>
+                      </div>
+                      <div class="card-glass-glow"></div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <!-- Sleek Progress Dots below the deck -->
+              <div class="deck-dots-bar" id="awards-dots">
+                <button class="deck-dot is-active" data-index="0" aria-label="Go to Slide 1"></button>
+                <button class="deck-dot" data-index="1" aria-label="Go to Slide 2"></button>
+                <button class="deck-dot" data-index="2" aria-label="Go to Slide 3"></button>
+                <button class="deck-dot" data-index="3" aria-label="Go to Slide 4"></button>
+              </div>
             </div>
-            <div>
-              <a href="https://drive.google.com/file/d/1wEuhZrC7hCYjdq86LnA1EEZkBDLjqNnJ/view" target="_blank"
-                class="btn-card-primary" id="view-award-letter-btn">
-                <span>View Official Commendation Letter</span>
-                <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
-                  <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
-                  <polyline points="15 3 21 3 21 9"></polyline>
-                  <line x1="10" y1="14" x2="21" y2="3"></line>
-                </svg>
-              </a>
+
+            <!-- Right Column: Tailored, Editorial Info Pane -->
+            <div class="testimonials-info-col">
+              <div class="testimonials-info-card" id="awards-info-card">
+                
+                <!-- Top Row: Badge + Counter -->
+                <div class="testimonial-meta-header">
+                  <span class="award-header-badge aws-badge" id="awards-badge">
+                    <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                      <path d="M12 2L2 7l10 5 10-5-10-5z"></path>
+                      <path d="M2 17l10 5 10-5"></path>
+                      <path d="M2 12l10 5 10-5"></path>
+                    </svg>
+                    <span id="awards-badge-text">OFFICIAL AWS CERTIFICATION</span>
+                  </span>
+                  
+                  <div class="testimonial-counter" id="awards-counter">
+                    <span class="counter-curr" id="awards-counter-curr">01</span>
+                    <span class="counter-sep">/</span>
+                    <span class="counter-total">04</span>
+                  </div>
+                </div>
+
+                <!-- Clean Title & Issuer Subtitle -->
+                <h3 class="testimonial-name" id="awards-name">AWS Certified Cloud Practitioner</h3>
+                <p class="testimonial-designation" id="awards-designation">
+                  Amazon Web Services (AWS) • Validation ID: <code>96da20d36d44477fba59b31a985bcd29</code>
+                </p>
+
+                <!-- Word-by-Word Blur Reveal Quote (Breathable, Clean Typography) -->
+                <p class="testimonial-quote-text" id="awards-quote-text">
+                  <!-- Words dynamically populated by JS with blur-in spans -->
+                </p>
+
+                <!-- Clean Inline Micro-Meta Badges -->
+                <div class="cert-meta-strip" id="awards-meta-strip">
+                  <!-- Populated by JS -->
+                </div>
+
+                <!-- Bottom Row: Primary Action Links + Circular Navigation Arrows -->
+                <div class="testimonial-footer-row">
+                  <div class="cert-actions" id="awards-actions">
+                    <!-- Populated by JS -->
+                  </div>
+
+                  <div class="testimonial-nav-arrows">
+                    <button class="testimonial-nav-btn prev-btn" id="awards-prev-btn" aria-label="Previous Award" title="Previous Slide">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="19" y1="12" x2="5" y2="12"></line>
+                        <polyline points="12 19 5 12 12 5"></polyline>
+                      </svg>
+                    </button>
+                    <button class="testimonial-nav-btn next-btn" id="awards-next-btn" aria-label="Next Award" title="Next Slide">
+                      <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+                        <line x1="5" y1="12" x2="19" y2="12"></line>
+                        <polyline points="12 5 19 12 12 19"></polyline>
+                      </svg>
+                    </button>
+                  </div>
+                </div>
+
+              </div>
             </div>
+
           </div>
         </div>
 
@@ -730,6 +770,7 @@
               <div class="marquee-item"><span class="mq-icon">🐍</span> Python 3 & PyTorch</div>
               <div class="marquee-item"><span class="mq-icon">🚀</span> FastAPI</div>
               <div class="marquee-item"><span class="mq-icon">🐘</span> PostgreSQL & Supabase</div>
+              <div class="marquee-item"><span class="mq-icon">☁️</span> AWS Cloud (Certified)</div>
               <div class="marquee-item"><span class="mq-icon">📡</span> WebSockets Live</div>
               <div class="marquee-item"><span class="mq-icon">🟩</span> Node.js & Express</div>
               <div class="marquee-item"><span class="mq-icon">🔄</span> n8n Automation</div>
@@ -740,6 +781,7 @@
               <div class="marquee-item"><span class="mq-icon">🐍</span> Python 3 & PyTorch</div>
               <div class="marquee-item"><span class="mq-icon">🚀</span> FastAPI</div>
               <div class="marquee-item"><span class="mq-icon">🐘</span> PostgreSQL & Supabase</div>
+              <div class="marquee-item"><span class="mq-icon">☁️</span> AWS Cloud (Certified)</div>
               <div class="marquee-item"><span class="mq-icon">📡</span> WebSockets Live</div>
               <div class="marquee-item"><span class="mq-icon">🟩</span> Node.js & Express</div>
               <div class="marquee-item"><span class="mq-icon">🔄</span> n8n Automation</div>
@@ -813,7 +855,7 @@
   </footer>
 
   <!-- App Script -->
-  <script src="./app.js"></script>
+  <script src="./app.js?v=2.9"></script>
 </body>
 
 </html>

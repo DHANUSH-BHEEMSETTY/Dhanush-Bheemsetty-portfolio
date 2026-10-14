@@ -104,6 +104,7 @@ I don't just write algorithms; I solve real customer pain points and build viabl
 <br>
 
 ### ⚙️ Backend, Cloud & Security
+<img src="https://img.shields.io/badge/AWS-Certified_Cloud_Practitioner-FF9900?style=for-the-badge&logo=amazon-aws&logoColor=white" alt="AWS Certified Cloud Practitioner" />
 <img src="https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white" alt="FastAPI" />
 <img src="https://img.shields.io/badge/Node.js-43853D?style=for-the-badge&logo=node.js&logoColor=white" alt="Node.js" />
 <img src="https://img.shields.io/badge/Express.js-000000?style=for-the-badge&logo=express&logoColor=white" alt="Express" />
@@ -116,7 +117,25 @@ I don't just write algorithms; I solve real customer pain points and build viabl
 
 ---
 
-## 🏆 Featured Honors & In-Action Gallery
+## 🏆 Featured Honors, Credentials & In-Action Gallery
+
+### ☁️ AWS Certified Cloud Practitioner — Amazon Web Services (AWS)
+* **Validation Number:** `96da20d36d44477fba59b31a985bcd29` | **Validity:** October 11, 2026 – October 11, 2029
+* **Verification:** [Verify with AWS](https://aws.amazon.com/verification)
+* **Credential:** [📜 Official AWS Certificate PDF (Google Drive)](https://drive.google.com/file/d/1W6-QZ9SQtYGLJ5f0MtmlI6Drr4ow3lCu/view?usp=sharing)
+* **Core Competencies:** AWS Global Cloud Infrastructure, Core Services (Compute, S3, RDS, Lambda, VPC), Shared Responsibility Security Model, IAM, and Cloud Financial Management.
+
+<br>
+
+<div align="center">
+  <a href="https://drive.google.com/file/d/1W6-QZ9SQtYGLJ5f0MtmlI6Drr4ow3lCu/view?usp=sharing" target="_blank">
+    <img src="./aws_certified_cloud_practitioner.png" alt="AWS Certified Cloud Practitioner Certificate - Dhanush Bheemisetty" width="85%" style="border-radius: 12px; border: 1px solid #E5E7EB; box-shadow: 0 6px 20px rgba(0,0,0,0.15);" />
+  </a>
+  <br><br>
+  <sub><b>☁️ Official AWS Certified Cloud Practitioner Credential</b> — Click image to view in Google Drive</sub>
+</div>
+
+<br>
 
 ### 🥇 1st Place Winner — VLaunch Pad 2025 (IIEC-VIT-AP)
 * **Concept:** **HoverCharge** — Next-Gen AI-Driven Mobile EV Wireless Charging Network.

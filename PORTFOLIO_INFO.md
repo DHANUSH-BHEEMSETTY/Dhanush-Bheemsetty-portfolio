@@ -101,6 +101,7 @@
 * **Visualization:** Chart.js, HTML5 Canvas, real-time data heatmaps.
 
 ### ⚙️ Backend, Databases & Cloud Systems
+* **Cloud Architecture & AWS Services:** **AWS Certified Cloud Practitioner**, EC2, S3, RDS, Lambda serverless, VPC networking fundamentals, IAM access control & zero-trust security, AWS Well-Architected Framework, Render CI/CD deployment.
 * **Server Frameworks:** Node.js, Express.js, FastAPI (Python), Streamlit.
 * **Databases:** PostgreSQL (Supabase), MySQL, MongoDB (Mongoose), SQLite.
 * **Cloud Architecture & Security:** Supabase Auth, Row-Level Security (RLS) policies, JWT, RESTful APIs, WebSockets, Event-Driven Architecture.
@@ -244,8 +245,14 @@ Dhanush stays plugged into the daily pulse of artificial intelligence:
 
 ## 11. Certifications & Licenses
 
-1. **MERN Stack Development** — *Face Prep*
-2. **Java Developer Internship Completion Certificate** — *SysIntelli Software and Services Pvt Ltd*
+1. **AWS Certified Cloud Practitioner** — *Amazon Web Services (AWS)*
+   * **Validation Number:** `96da20d36d44477fba59b31a985bcd29`
+   * **Issue Date:** October 11, 2026 | **Expiration Date:** October 11, 2029
+   * **Official Verification Portal:** [aws.amazon.com/verification](https://aws.amazon.com/verification)
+   * **Official Certificate Credential:** [📜 View AWS Certificate PDF (Google Drive)](https://drive.google.com/file/d/1W6-QZ9SQtYGLJ5f0MtmlI6Drr4ow3lCu/view?usp=sharing)
+   * **Validated Core Competencies:** Cloud computing concepts, AWS global infrastructure & core services (Compute, Storage, Database, Networking), Cloud security & compliance frameworks (AWS Shared Responsibility Model, IAM, encryption), and AWS billing, pricing models, and cost governance.
+2. **MERN Stack Development** — *Face Prep*
+3. **Java Developer Internship Completion Certificate** — *SysIntelli Software and Services Pvt Ltd*
 
 ---
 
@@ -343,6 +350,7 @@ A modern, dark cyber-minimalist aesthetic tailored to impress high-growth tech r
 | **`2.jpeg`** | **VLaunch Pad 2025 Winner Photo**<br>Dhanush standing proudly holding the official 1st Place Trophy Plaque & Certificate of Appreciation at VIT-AP University. | Vertical / Full Portrait | • "Honors & Awards" Section<br>• GitHub README Trophy Spotlight<br>• Pitch Deck Team Slide | **Hard social proof.** Concrete visual verification of winning a major competitive university hackathon/pitch. |
 | **`1.jpeg`** | **Live Team Pitching & Evaluation**<br>Dhanush and team actively presenting their laptop demo to evaluators and faculty. | Landscape / Collaborative | • "Experience & Hackathons" Section<br>• HoverCharge Project Showcase<br>• "In Action" Photo Carousel | Demonstrates real-world teamwork, communication, and live product demonstration under scrutiny. |
 | **`3.jpeg`** | **Official Award Plaque & Certificate Close-up**<br>High-resolution close-up of the gold-embossed VIT-AP VLaunch Pad 2025 1st Place award plaque and certificate in the auditorium. | Vertical / Still Life | • HoverCharge Project Detail Modal<br>• Awards & Credentials Grid | Crisp documentation of the commendation for HoverCharge innovation and excellence. |
+| **`aws_certified_cloud_practitioner.png`** | **AWS Certified Cloud Practitioner Official Certificate**<br>High-resolution official credential certificate issued by Amazon Web Services to Bheemsetty Dhanush. | Landscape / 2200x1700 | • "Honors, Awards & Certifications" Section<br>• Cloud Credentials Grid<br>• Technical Resume Appendix | **Global industry credential proof.** Unimpeachable validation of cloud infrastructure and AWS competencies. |
 | **`5.jpeg`** | **Casual Mirror Selfie**<br>Contemporary snapshot in a dark polo and spectacles. | Square / Casual | • Social Media (Twitter/X, Telegram)<br>• Informal Developer Community Profiles | Alternative personal snapshot. |
 
 ---
